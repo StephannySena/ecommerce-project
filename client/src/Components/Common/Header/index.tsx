@@ -11,12 +11,13 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import SideBar from "../Sidebar";
 import Logo from "../../../assets/img/logo.png";
+import theme from "../../../Theme";
 
 export default function Header() {
   const [openDrawner, setOpenDrawner] = useState(false);
 
   const AppBarCustom = styled(AppBar)({
-    backgroundColor: "#000000",
+    backgroundColor: theme.palette.primary.main,
   });
 
   return (

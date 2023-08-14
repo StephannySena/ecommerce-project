@@ -1,8 +1,9 @@
-import { Box, Drawer, List, Typography, styled } from "@mui/material";
+import { Box, Drawer, Typography, styled } from "@mui/material";
+import theme from "../../../Theme";
 
 export default function SideBar({ openDrawner, setOpenDrawner }: any) {
   const DrawnerCustom = styled(Box)({
-    backgroundColor: "#363636",
+    backgroundColor: theme.palette.primary.light,
     height: "100vh",
     padding: "10px"
   });

@@ -1,11 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Common/Header';
+import { ThemeProvider } from '@material-ui/core';
+import theme from './Theme';
 
 function App() {
   return (
-   <Header />
+    <ThemeProvider theme={theme}>
+      <Header />
+    </ThemeProvider>
   );
 }
 
